@@ -52,83 +52,40 @@
         <div class="col-4">
             <div class="card" style="width:18rem">
                 <div class="card-body">
-                    <b>TL;DR:</b> Virtualization allows developers to run multiple OS in different VMs.
-                    Containerization allows multiple applications to run in a container with the Host OS.
+                    <b>TL;DR:</b> The relationship between Kubernetes and Docker can be symbiotic, with Docker running
+                    containerized applications while Kubernetes manages multiple hosts with Docker installed.
                 </div>
             </div>
             <div style="width:18rem; margin-top:1rem">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>VM</b> - Virtual Machine</li>
                     <li class="list-group-item"><b>OS</b> - Operating System</li>
-                    <li class ="list-group-item"><b>hypervisor</b> - software that creates and runs virtual machines</li>
+                    <li class="list-group-item"><b>hosts</b> - different operating systems</li>
+                    <li class="list-group-item"><b>Kubernetes cluster</b> - a collection of nodes managed by a single
+                        Kubernetes instance</li>
                 </ul>
             </div>
         </div>
         <div class="col-8">
             <p>
-                Before containerization, virtualization was the best way to isolate and organize applications, each in
-                their own <b>VM</b>, allowing multiple applications to run on the same physical hardware. Each
-                application running has their own guest <b>OS</b>.
+                Docker is software that can be installed on any computer to run <a href="virtual.html">containerized</a>
+                applications, allowing users to run, create, and manage containers on a single <b>OS</b>. If you have
+                docker installed in multiple <b>hosts</b>, Kubernetes allows for automation of container provisioning,
+                networking, load-balancing, security, and scaling across all nodes from a single dashboard or command
+                line. Multiple nodes allow for:
+                <ol>
+                    <li>A robust infrastructure: an application will continue to run even if some nodes go offline.</li>
+                    <li>To have a scalable application: if workload increases, a user can spawn more containers and/or
+                        add more nodes to your <b>Kubernetes cluster</b></li>
+                </ol>
             </p>
-            <div class="row" style="padding:1rem">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;margin-left:2rem; height:18rem">
-                        <div class="card-body">
-                            <h5 class="card-title">Virtualization Pros</h5>
-                            <p class="card-text">
-                            <li>mulitple OS can run at the same time</li>
-                            <li>easy recovery and maintenance in a condition of failure case</li>
-                            <li>due to less usage/need for infrastructure, total cost of ownership came down</li>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem; margin-left:8rem; height:18rem">
-                        <div class="card-body">
-                            <h5 class="card-title">Virtualization Cons</h5>
-                            <li>Unstable performance because of running multiple VMs</li>
-                            <li>The efficiency of <b>Hypervisors</b> is not as good as the host OS</li>
-                            <li>Long boot-up time</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <p>
-                Containerization abstracts OS, allowing applications to run in a container which shares the host OS
-                and holds only those application which is related to binaries and libraries. Deployments are faster and
-                more reliable because they only contain applications specific to libraries that are isolated from other
-                containers.
+                Kubernetes can work with any containerization technology, two of the most popular ones being Docker and
+                rkt. However, Docker is more popular which has led to more integration between the two. Docker also has
+                its own container orchestration engine, Docker Swarm, but still has its own Kubernetes distribution.
             </p>
-            <div class="row" style="padding:1rem">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;margin-left:2rem; height:18rem">
-                        <div class="card-body">
-                            <h5 class="card-title">Containerization Pros</h5>
-                            <p class="card-text">
-                            <li>mulitple OS can run at the same time</li>
-                            <li>easy recovery and maintenance in a condition of failure case</li>
-                            <li>due to less usage/need for infrastructure, total cost of ownership came down</li>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem; margin-left:8rem; height:18rem">
-                        <div class="card-body">
-                            <h5 class="card-title">Containerization Cons</h5>
-                            <li>some container products don't work with other ones due to competition</li>
-                            <li>persistent data storage is complicated</li>
-                            <li>graphical applications don't work well</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <p>
-                The primary difference between containerization and virtualization is that containers provide a way to
-                virtualize an OS and run multiple workloads in one OS instance, while hardware is virtualized to run
-                multiple OS instances in VMs. The portability and speed of containers makes it a tool to streamline
-                software development.
+                Thus, when used together, Docker allows for the creation of containers while Kubernetes is an
+                orchestration platform that can be used to automate container processes.
             </p>
         </div>
     </div>
