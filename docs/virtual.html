@@ -47,7 +47,92 @@
         <h1 class="display-4">Virtualization and Containerization</h1>
     </div>
 </div>
-
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width:18rem">
+                <div class="card-body">
+                    <b>TL;DR:</b> Virtualization allows developers to run multiple OS in different VMs.
+                    Containerization allows multiple applications to run in a container with the Host OS.
+                </div>
+            </div>
+            <div style="width:18rem; margin-top:1rem">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>VM</b> - Virtual Machine</li>
+                    <li class="list-group-item"><b>OS</b> - Operating System</li>
+                    <li class ="list-group-item"><b>hypervisor</b> - software that creates and runs virtual machines</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <p>
+                Before containerization, virtualization was the best way to isolate and organize applications, each in
+                their own <b>VM</b>, allowing multiple applications to run on the same physical hardware. Each
+                application running has their own guest <b>OS</b>.
+            </p>
+            <div class="row" style="padding:1rem">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;margin-left:2rem; height:18rem">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtualization Pros</h5>
+                            <p class="card-text">
+                            <li>mulitple OS can run at the same time</li>
+                            <li>easy recovery and maintenance in a condition of failure case</li>
+                            <li>due to less usage/need for infrastructure, total cost of ownership came down</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem; margin-left:8rem; height:18rem">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtualization Cons</h5>
+                            <li>Unstable performance because of running multiple VMs</li>
+                            <li>The efficiency of <b>Hypervisors</b> is not as good as the host OS</li>
+                            <li>Long boot-up time</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Containerization abstracts OS, allowing applications to run in a container which shares the host OS
+                and holds only those application which is related to binaries and libraries. Deployments are faster and
+                more reliable because they only contain applications specific to libraries that are isolated from other
+                containers.
+            </p>
+            <div class="row" style="padding:1rem">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;margin-left:2rem; height:18rem">
+                        <div class="card-body">
+                            <h5 class="card-title">Containerization Pros</h5>
+                            <p class="card-text">
+                            <li>mulitple OS can run at the same time</li>
+                            <li>easy recovery and maintenance in a condition of failure case</li>
+                            <li>due to less usage/need for infrastructure, total cost of ownership came down</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem; margin-left:8rem; height:18rem">
+                        <div class="card-body">
+                            <h5 class="card-title">Containerization Cons</h5>
+                            <li>some container products don't work with other ones due to competition</li>
+                            <li>persistent data storage is complicated</li>
+                            <li>graphical applications don't work well</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                The primary difference between containerization and virtualization is that containers provide a way to
+                virtualize an OS and run multiple workloads in one OS instance, while hardware is virtualized to run
+                multiple OS instances in VMs. The portability and speed of containers makes it a tool to streamline
+                software development.
+            </p>
+        </div>
+    </div>
+</div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
