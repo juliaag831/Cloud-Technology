@@ -1,10 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="shortcut icon" href="images/weather-clouds.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kubernetes.css"/>
+    <title>Kubernetes vs. Docker</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/weather-clouds.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cloud Technology
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="virtual.html">Virtualization and Containerization</a>
+                    <a class="dropdown-item" href="data.html">Data Centers and the Cloud</a>
+                    <a class="dropdown-item" href="kubernetes.html">Kubernetes and Docker</a>
+                    <a class="dropdown-item" href="tutorial.html">Tutorial</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid" id="indexJumbotron">
+    <div class="container">
+        <h1 class="display-4">ABOUT</h1>
+        <p class="lead"> Learn about this project and the team behind it!</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <p> In this assignment I want you to work in a team to create a website that teaches a new user about the cloud and how technologies such as Docker and Kubernetes are used. You should use pictures, text, and link to other resources for additional information.  The website should have the following web pages: </p>
+            <p>
+            <h5> Questions to Answer and Content to Create:</h5>
+            </p>
+        <ol>
+            <li> What is virtualization? What is containerization?  How do they compare? </li>
+            <li> Explain what a data center is and how they relate to the cloud.</li>
+            <li> Research and compare Kubernetes to Docker.  Both are containerization technologies with different strengths and weaknesses. </li>
+            <li A tutorial on how to create a docker repository and store an image with your own website stored in it and served using apache. </li>
+        </ol>
+        <p> 
+        <h5> Submission </h5>
+        </p>
+    <p>
+        Create a readme.md file in your repository and put a link to your website in the readme.  The website should be hosted using github pages.  Submit a link to the repository to this assignment.  You should use bootstrap and practice what you have learned about making web pages.
+    </p>  
+        </div>
+        <div class="col-4">
+            <h5> About Team</h5>
+          <div class="card-header border-0 font-weight-bold d-flex justify-content-between">
+              <p class="mr-4 mb-0">About:</p>
+              <ul class="list-unstyled list-inline mb-0">
+                  <li class="list-inline-item"><a href="https://github.com/juliaag831">My GitHub Profile</a></li>
+                  </div>
+              <div class="media mt-4 px-1">
+                  <div class="media-body">
+                      <h5 class="font-weight-bold mt-0"> Julia-Marie Guinto</h5>
+                      <p> Hello, I am Julia-Marie Guinto, a sophomore at NJIT studying Human-Computer Interaction (HCI). As I was previously a Chemical Engineering major, I am brand new to the field, but I am very interested to find the connections between people and technology, so I will be learning everythin along the way.</p>
+                  </div>
+              </div>
+              <div class="card-header border-0 font-weight-bold d-flex justify-content-between">
+                  <p class="mr-4 mb-0">About:</p>
+                  <ul class="list-unstyled list-inline mb-0">
+                      <li class="list-inline-item"><a href="https://github.com/sammyyyalex"> My GitHub Profile</a></li>
+                      </div>
+                  <div class="media mt-4 px-1">
+                      <div class="media-body">
+                          <h5 class="font-weight-bold mt-0"> Samantha Paradero</h5>
+                          <p> I am an NJIT freshman majoring in Human-Computer Interaction. I was introduced to CS after attending a cybersecurity camp before my junior year of high school. Since then, I have been passionate about learning about the intersection of technology and humans.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+<!-- Optional JavaScript; choose one of the two! -->
 
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
 </body>
 </html>
